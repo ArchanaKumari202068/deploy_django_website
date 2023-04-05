@@ -1,14 +1,14 @@
 {
     "builds": [
       {
-        "src": "playground/wsgi.py",
+        "src": "storefront/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "playground/wsgi.py"
+        "dest": "storefront/wsgi.py"
       }
     ]
   }
