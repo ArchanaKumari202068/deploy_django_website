@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "playground/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "playground/wsgi.py"
+      }
+    ]
+  }
